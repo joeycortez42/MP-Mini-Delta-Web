@@ -7,9 +7,9 @@ $(document).ready(function() {
 	printerStatus();
 	initWebSocket();
 
-	setTimeout(function() {
-		startup();
-	}, 2000);
+	// setTimeout(function() {
+	// 	startup();
+	// }, 2000);
 
 	setInterval(function() {
 		printerStatus();
@@ -29,17 +29,16 @@ $(document).ready(function() {
 	});
 
 	$(".movement .home").click(function() {
+		sendCmd('G28', 'Home Hotend');
+		setPositioning = false;
+	});
+
+	$(".movement .level").click(function() {
 		axis = $(this).attr("data-axis");
 
-		if (axis == 'all') {
-			code = 'G28 X0 Y0 Z0';
-			comment = 'all axes';
-		} else {
-			code = 'G28 ' + axis;
-			comment = axis + ' axis';
-		}
+		code = 'G29 ' + axis;
 
-		sendCmd(code, 'Home ' + comment);
+		sendCmd(code, 'Leveling');
 		setPositioning = false;
 	});
 
@@ -195,7 +194,7 @@ function initWebSocket() {
 	try {
 		ws = new WebSocket('ws://' + url + ':81');
 		ws.onopen = function() {
-			feedback('Connection Established');
+			feedback('Connecting...');
 		};
 		ws.onmessage = function(a) {
 			//console.log(a);
