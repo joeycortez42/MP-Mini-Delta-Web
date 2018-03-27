@@ -1,5 +1,11 @@
 # MP Mini Delta Web
 
+## Overview
+
+This Web UI is built using Bootstrap so it's mobile-friendly and tablet-friendly. Multiple browser connections are supported. GCode responses are sent via Web Sockets so all browser windows will display the printer responses. GCode commands are sent via the REST API, since sending via Web Sockets proved to be unreliable.
+
+![Image of the WebUI](https://raw.githubusercontent.com/nokemono42/MP-Mini-Delta-Web/master/images/screenshot.png)
+
 ## Updating the factory web UI
 
 1. Download and unzip `MP-Mini-Delta-Web` from GitHub.
@@ -10,6 +16,22 @@
 6. If you see "OK" you are good to go!
 7. You can power cycle your printer, but it's not necessary.
 8. Once your printer is back online, browse to `http://IPAddressHere`. You should now have the upgraded Web UI.
+
+## Enable Faster Wi-Fi File Uploads
+
+By default, the upgraded Web UI will send `M563 S4` on each refresh to ensure faster Wi-Fi file uploads are enabled. This setting doesn't persist after the printer had been powered off.
+
+Note: Since `S6` and `S5` are currently broken due to a firmware bug.
+
+`M563` parameters can be values between `S2` - `S6`. Transfers happen over telnet, which blocks the sending of any other GCode commands and limits how fast the files can be transferred. The sweet spot seems to be less then 12 MB of GCode. Files larger then that take over 2 minutes to transfer.
+
+| M563 S# | Avg Transfer Speed | Supported On             |
+| ------- | -----------------: | ------------------------ |
+| S2      |            39 Kbps | Same as Firmware Default |
+| S3      |            63 Kbps | V1 / V2? / Delta         |
+| S4      |            91 Kbps | V1 / V2? / Delta         |
+| S5      |           103 Kbps | V2?                      |
+| S6      |           112 Kbps | V1                       |
 
 ## SD Card Functions
 
