@@ -145,6 +145,8 @@ function scrollConsole() {
 }
 
 function feedback(output) {
+	output = output.replace(/echo:/g, '');
+
 	if (output.substring(0, 5) == 'Begin' || sdListing == true) {
 		sdListing = true;
 		
@@ -169,8 +171,6 @@ function feedback(output) {
 
 	output = output.replace(/N0 P15 B13/g, '');
 	output = output.replace(/N0 P15 B15/g, '');
-
-	output = output.replace(/echo:/g, '');
 
 	$("#gCodeLog").append('<p class="text-warning">' + output + '</p>');
 
