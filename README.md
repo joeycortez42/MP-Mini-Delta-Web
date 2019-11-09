@@ -72,7 +72,7 @@ The file listing loads when the refresh icon is clicked. File names in the Web U
 
 Files that are uploaded will be renamed from "cache.gc" to the original file name. If you are re-uploading a previous file, the old file is deleted first, then the file is renamed. The .gc extension is used to maximize file name length.
 
-The print icon does two things: it selects the file `M32` for print, and tells the printer to print it `M24`, but it won't set the target tempatures. Pre-heat before requesting to print a file. Once the extruder and bed are at the target temperatures, the printer LCD will display the printing screen.
+The print icon does two things: it selects the file `M32` for print, and tells the printer to print it `M24`, but it won't set the target temperatures. Pre-heat before requesting to print a file. Once the extruder and bed are at the target temperatures, the printer LCD will display the printing screen.
 
 The delete icon will delete the file, `M30`, and remove the entry from the listing. Frequent file listing refreshed have proven to be erradic.
 
