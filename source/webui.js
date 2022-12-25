@@ -332,8 +332,8 @@ function printerStatus() {
 	$.get("inquiry", function(data, status) {
 		//console.log(data);
 
-		$("#rde").text(data.match( /\d+/g )[0]);
-		$("#rdp").text(data.match( /\d+/g )[2]);
+		$("#rde").text(data.match( /\d+\/\d+/g )[0]);
+		$("#rdp").text(data.match( /\d+\/\d+/g )[1]);
 
 		delaySyncTemperatures(data.match( /\d+/g )[1], data.match( /\d+/g )[3]);
 
