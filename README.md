@@ -50,7 +50,7 @@ M84 ; Disable motors
 5. Click "Upload web."
 6. If you see "OK" you are good to go!
 7. You can power cycle your printer, but it's not necessary.
-8. Once your printer is back online, browse to `http://IPAddressHere`. You should see have the upgraded Web UI.
+8. Once your printer is back online, browse to `http://IPAddressHere`. You should see the upgraded Web UI.
 
 ## Enable Faster Wi-Fi File Uploads
 
