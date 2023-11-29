@@ -62,28 +62,35 @@
         <div class="col-xs-12 col-md-4 movement">
             <h4 class="text-center">Movement</h4>
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 3 Point" data-axis="">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-_3Point" stroke="none" fill="rgb(101, 108, 126)" d="M 10,14 L 14,14 14,10 10,10 10,14 Z M 0,14 L 4,14 4,10 0,10 0,14 Z M 5,4 L 9,4 9,-0 5,-0 5,4 Z M 5,4" />
                         </svg> G29
                     </button>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 4 Point" data-axis="P2">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-_4Point" stroke="none" fill="rgb(101, 108, 126)" d="M 10,14 L 14,14 14,10 10,10 10,14 Z M 0,14 L 4,14 4,10 0,10 0,14 Z M 5,4 L 9,4 9,-0 5,-0 5,4 Z M 5,10 L 9,10 9,6 5,6 5,10 Z M 5,10" />
                         </svg> G29 P2
                      </button>
                 </div>
-                <div class="col-xs-2 col-xs-offset-1 text-center direction">
+                <div class="col-xs-2 text-center direction col-xs-offset-1">
+                    <button type="button" class="btn btn-default" data-movement="plus" title="Incr Y Axis" data-axis="Y">
+                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
+                            <path id="icons-upArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 6.5,0 L 1,7 4.5,7 4.5,14 8.5,14 8.5,7 12,7 6.5,0 Z M 6.5,0" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="col-xs-2 text-center direction">
                     <button type="button" class="btn btn-default" data-movement="down" title="Raise Z Axis" data-axis="Z">
                          <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-upArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 6.5,0 L 1,7 4.5,7 4.5,14 8.5,14 8.5,7 12,7 6.5,0 Z M 6.5,0" />
                         </svg>
                     </button>
                 </div>
-                <div class="col-xs-3 text-center direction">
+                <div class="col-xs-2 text-center direction">
                     <button type="button" class="btn btn-default" data-movement="minus" title="Retract Filament" data-axis="E">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <rect id="icons-minus" stroke="none" fill="rgb(101, 108, 126)" x="1" y="6" width="12" height="3.5" />
@@ -92,46 +99,68 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 3x3" data-axis="P3">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"  xml:space="preserve">
                             <path id="icons-g29P3" stroke="none" fill="rgb(101, 108, 126)" d="M 5,14 L 8,14 8,11 5,11 5,14 Z M 5,4 L 8,4 8,1 5,1 5,4 Z M 5,9 L 8,9 8,6 5,6 5,9 Z M 10,9 L 13,9 13,6 10,6 10,9 Z M 0,9 L 3,9 3,6 0,6 0,9 Z M 0,9" />
                         </svg> G29 P3
                     </button>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 4x4" data-axis="P4">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"  xml:space="preserve">
                             <path id="icons-g29P4" stroke="none" fill="rgb(101, 108, 126)" d="M 12,10 L 14,10 14,8 12,8 12,10 Z M 12,6 L 14,6 14,4 12,4 12,6 Z M 8,2 L 10,2 10,-0 8,-0 8,2 Z M 4,2 L 6,2 6,-0 4,-0 4,2 Z M 0,6 L 2,6 2,4 0,4 0,6 Z M 0,10 L 2,10 2,8 0,8 0,10 Z M 4,14 L 6,14 6,12 4,12 4,14 Z M 8,14 L 10,14 10,12 8,12 8,14 Z M 4,6 L 6,6 6,4 4,4 4,6 Z M 8,6 L 10,6 10,4 8,4 8,6 Z M 4,10 L 6,10 6,8 4,8 4,10 Z M 8,10 L 10,10 10,8 8,8 8,10 Z M 8,10" />
                         </svg> G29 P4
                     </button>
                 </div>
-                <div class="col-xs-2 col-xs-offset-1 text-center">Z</div>
-                <div class="col-xs-3 text-center">Extrude</div>
+                <div class="col-xs-2 text-center direction">
+                    <button type="button" class="btn btn-default" data-movement="left" title="Decr X Axis" data-axis="X">
+                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
+                            <path id="icons-upArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 6.5,0 L 1,7 4.5,7 4.5,14 8.5,14 8.5,7 12,7 6.5,0 Z M 6.5,0" transform="rotate(90) scale(1, -1)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="col-xs-2 text-center direction">
+                    <button type="button" class="btn btn-default" data-movement="plus" title="Incr X Axis" data-axis="X">
+                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
+                            <path id="icons-upArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 6.5,0 L 1,7 4.5,7 4.5,14 8.5,14 8.5,7 12,7 6.5,0 Z M 6.5,0" transform="rotate(90) translate(0, -14)" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="col-xs-1 text-center"></div>
+                <div class="col-xs-2 text-center">Extrude</div>
             </div>
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 5x5" data-axis="P5">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"  xml:space="preserve">
                             <path id="icons-g29P5" stroke="none" fill="rgb(101, 108, 126)" d="M 4,2 L 6,2 6,-0 4,-0 4,2 Z M 8,2 L 10,2 10,-0 8,-0 8,2 Z M 0,6 L 2,6 2,4 0,4 0,6 Z M 3,6 L 5,6 5,4 3,4 3,6 Z M 6,6 L 8,6 8,4 6,4 6,6 Z M 9,6 L 11,6 11,4 9,4 9,6 Z M 12,6 L 14,6 14,4 12,4 12,6 Z M 0,10 L 2,10 2,8 0,8 0,10 Z M 3,10 L 5,10 5,8 3,8 3,10 Z M 6,10 L 8,10 8,8 6,8 6,10 Z M 9,10 L 11,10 11,8 9,8 9,10 Z M 12,10 L 14,10 14,8 12,8 12,10 Z M 4,14 L 6,14 6,12 4,12 4,14 Z M 8,14 L 10,14 10,12 8,12 8,14 Z M 8,14" />
                         </svg> G29 P5
                     </button>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block level" title="Double Tap 6x6" data-axis="P6">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"  xml:space="preserve">
                             <path id="icons-g29P6" stroke="none" fill="rgb(101, 108, 126)" d="M 0,6 L 1,6 1,5 0,5 0,6 Z M 0,9 L 1,9 1,8 0,8 0,9 Z M 2,9 L 3,9 3,8 2,8 2,9 Z M 2,3 L 3,3 3,2 2,2 2,3 Z M 2,6 L 3,6 3,5 2,5 2,6 Z M 2,12 L 3,12 3,11 2,11 2,12 Z M 5,14 L 6,14 6,13 5,13 5,14 Z M 8,14 L 9,14 9,13 8,13 8,14 Z M 5,12 L 6,12 6,11 5,11 5,12 Z M 8,12 L 9,12 9,11 8,11 8,12 Z M 11,12 L 12,12 12,11 11,11 11,12 Z M 5,9 L 6,9 6,8 5,8 5,9 Z M 8,9 L 9,9 9,8 8,8 8,9 Z M 11,9 L 12,9 12,8 11,8 11,9 Z M 13,9 L 14,9 14,8 13,8 13,9 Z M 5,6 L 6,6 6,5 5,5 5,6 Z M 8,6 L 9,6 9,5 8,5 8,6 Z M 11,6 L 12,6 12,5 11,5 11,6 Z M 13,6 L 14,6 14,5 13,5 13,6 Z M 5,3 L 6,3 6,2 5,2 5,3 Z M 8,3 L 9,3 9,2 8,2 8,3 Z M 11,3 L 12,3 12,2 11,2 11,3 Z M 5,1 L 6,1 6,-0 5,-0 5,1 Z M 8,1 L 9,1 9,-0 8,-0 8,1 Z M 8,1" />
                         </svg> G29 P6
                     </button>
                 </div>
-                <div class="col-xs-2 col-xs-offset-1 text-center direction">
+                <div class="col-xs-2 text-center direction col-xs-offset-1">
+                    <button type="button" class="btn btn-default" data-movement="left" title="Decr Y Axis" data-axis="Y">
+                        <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
+                            <path id="icons-downArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 4.5,-0 L 8.5,-0 8.5,7 12,7 6.5,14 1,7 4.5,7 4.5,-0" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="col-xs-2 text-center direction">
                     <button type="button" class="btn btn-default" data-movement="up" title="Lower Z Axis" data-axis="Z">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-downArrow" stroke="none" fill="rgb(101, 108, 126)" d="M 4.5,-0 L 8.5,-0 8.5,7 12,7 6.5,14 1,7 4.5,7 4.5,-0" />
                         </svg>
                     </button>
                 </div>
-                <div class="col-xs-3 text-center direction">
+                <div class="col-xs-2 text-center direction">
                     <button type="button" class="btn btn-default" data-movement="plus" title="Extrude Filament" data-axis="E">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-plus" stroke="none" fill="rgb(101, 108, 126)" d="M 1,5.75 L 5.25,5.75 5.25,1 8.75,1 8.75,5.75 13,5.75 13,9.25 8.75,9.25 8.75,14 5.25,14 5.25,9.25 1,9.25 1,5.75 Z M 1,5.75" />
@@ -140,19 +169,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <button type="button" class="btn btn-default btn-block home" title="Home Hotend" data-axis="all">
                         <svg class="glyphicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1em" width="1em" xml:space="preserve">
                             <path id="icons-home" stroke="none" fill="rgb(101, 108, 126)" d="M 0,7.5 L 7,-0 14,7.5 12.13,7.5 12.13,15 8.4,15 8.4,10 5.6,10 5.6,15 1.87,15 1.87,7.5 0,7.5 0,7.5 Z M 0,7.5" />
                         </svg>
                     </button>
                 </div>
-                <div class="btn-group pull-right rate" title="Movement Interval" role="group">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4  text-center direction">
+                <div class="btn-group rate" title="Movement Interval" role="group">
                     <button type="button" class="btn btn-default" data-rate="1">1</button>
                     <button type="button" class="btn btn-default" data-rate="5">5</button>
                     <button type="button" class="btn btn-default active" data-rate="10">10</button>
                     <button type="button" class="btn btn-default" data-rate="25">25</button>
                     <button type="button" class="btn btn-default" data-rate="50">50</button>
+                </div>
                 </div>
             </div>
         </div>
